@@ -16,8 +16,8 @@ print("Data Shape: ", iris.data.shape)
 print("Target Shape: ", iris.target.shape)
 # split the dataset in order to validate our classifier's performance
 print()
-print("<------------------------------------------------------>")
-print()
+print("<------------------------------------------------------>\n")
+
 x_train, x_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=0)
 
 # Here I'm using 40% of the data for testing purpose
@@ -25,8 +25,7 @@ x_train, x_test, y_train, y_test = train_test_split(iris.data, iris.target, test
 print("Training Data Shape: ", x_train.shape) #training data
 print("Testing Shape: ", x_test.shape) #testing data
 print()
-print("<------------------------------------------------------>")
-print()
+print("<------------------------------------------------------>\n")
 # Here comes the classifier, we use the fit() to fit the data into our classifier
 
 clf = SVC(kernel='linear').fit(x_train, y_train)
